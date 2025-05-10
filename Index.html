@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice Cream Delight</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    nav {
+      background-color: #ff5e99;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .box {
+      background-color: #fdf1f6;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .box h3 {
+      margin: 0.8rem 0 0.4rem;
+      color: #e91e63;
+    }
+
+    .box p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">IceCream Delight</div>
+    <ul>
+      <li>Home</li>
+      <li>Flavors</li>
+      <li>Specials</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="box">
+      <img src="https://images.pexels.com/photos/7855286/pexels-photo-7855286.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strawberry Ice Cream" />
+      <h3>Strawberry Bliss</h3>
+      <p>Made with real strawberries and cream. A fruity favorite that melts in your mouth.</p>
+    </div>
+    <div class="box">
+      <img src="https://images.pexels.com/photos/4725718/pexels-photo-4725718.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+      <h3>Choco Dream</h3>
+      <p>Rich, creamy, and loaded with chocolate goodness. A true indulgence.</p>
+    </div>
+    <div class="box">
+      <img src="https://images.pexels.com/photos/10281286/pexels-photo-10281286.jpeg?auto=compress&cs=tinysrgb&w=600" />
+      <h3>Classic Vanilla</h3>
+      <p>Smooth and timeless, our vanilla is made with Madagascar vanilla beans.</p>
+    </div>
+    <div class="box">
+      <img src="https://images.pexels.com/photos/29512741/pexels-photo-29512741/free-photo-of-colorful-ice-cream-cone-in-hand.jpeg?auto=compress&cs=tinysrgb&w=600" />
+      <h3>Mango Mania</h3>
+      <p>Tropical mango flavor in every scoop. Perfect for sunny days and happy vibes.</p>
+    </div>
+    <div class="box">
+      <img src="https://media.istockphoto.com/id/1405543709/photo/colorful-ice-cream-balls-on-table.jpg?s=2048x2048&w=is&k=20&c=SzAKF2J5dg6i4n4hnOKXOc36sbCql5l6yN7M36jBz64=" alt="Caramel Ice Cream" />
+      <h3>Caramel Crunch</h3>
+      <p>Swirls of caramel and crispy toppings make this a sweet and salty treat.</p>
+    </div>
+    <div class="box">
+      <img src="https://images.pexels.com/photos/25841535/pexels-photo-25841535/free-photo-of-handmade-ice-cream-on-a-plate.jpeg?auto=compress&cs=tinysrgb&w=600" />
+      <h3>Pistachio Paradise</h3>
+      <p>Nutty, creamy, and naturally green. A flavor for those who crave the extraordinary.</p>
+    </div>
+  </div>
+</body>
+</html>
